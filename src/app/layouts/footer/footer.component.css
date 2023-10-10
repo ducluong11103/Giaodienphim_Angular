@@ -1,0 +1,43 @@
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: #141414;
+}
+.footer-main{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.main-top{
+    height: 50px;
+    width: 100%;
+    /* display: flex; */
+}
+/* .main-top-img a{
+    width: 20px;
+    height: 20px;
+} */
+.item a{
+    margin: 0 10px;
+    font-size: 20px;
+    color: white;
+}
+.main-bot{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -20px;
+}
+.box{
+    width: 250px;
+    height: 100px;
+}
+.box-text{
+    text-decoration: none;
+    font-size: 15px;
+    font-family: Arial;
+    font-weight: 400;
+    color: silver;
+}

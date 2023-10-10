@@ -1,0 +1,183 @@
+<div class="body">
+    <div class="body-main">
+        <div class="left">
+            <h1 style="color:white;">CHIẾU RẠP</h1>
+            <ng-container *ngFor="let p of products">
+                <div class="content">
+                    <p><b class="text-content">{{p.h2}}</b></p>
+                    <div class="main-content">
+                        <div class="item-content">
+                        <a routerLink="/chitietphim/:id"><img class="main-content-img" src="/assets/img1/{{p.img1}}" alt=""></a>
+                        </div>
+                        <div class="item-content">
+                        <a routerLink="/chitietphim"><img class="main-content-img" src="/assets/img1/{{p.img2}}" alt=""></a>
+                        </div>
+                        <div class="item-content">
+                            <a routerLink="/chitietphim"><img class="main-content-img" src="/assets/img1/{{p.img3}}" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+
+            <!-- <div class="content">
+                <p> <b class="text-content">Phim Âu-Mỹ</b></p>
+                <div class="main-content">
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/m1.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/m2.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                        <a href=""> <img class="main-content-img" src="/assets/img1/m3.webp" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p> <b class="text-content">Phim Hàn Quốc</b></p>
+                <div class="main-content">
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/q1.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/q2.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                        <a href=""> <img class="main-content-img" src="/assets/img1/q3.webp" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p> <b class="text-content">    </b></p>
+                <div class="main-content">
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/a1.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/a2.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                        <a href=""> <img class="main-content-img" src="/assets/img1/a3.webp" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <p> <b class="text-content">Phim kinh dị quốc tế</b></p>
+                <div class="main-content">
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/t1.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                       <a href=""><img class="main-content-img" src="/assets/img1/t2.webp" alt=""></a>
+                    </div>
+                    <div class="item-content">
+                        <a href=""> <img class="main-content-img" src="/assets/img1/t3.webp" alt=""></a>
+                    </div>
+                </div>
+            </div> -->
+        <div class="right">
+            <h1 style="color:white;margin-left: 95px;">NỔI BẬT</h1>
+            <div class="frames">
+                <ng-container *ngFor="let c of chieu">
+                    <div class="right-content"> 
+                        <div class="item-content1">
+                            <img class="item-content1-img1" src="/assets/img1/{{c.img}}" alt="">
+                        </div>
+                        <div>
+                            <p class="text">{{c.text}}</p>
+                        <div class="trailer">
+                            <p style="color: #b5b5b5; margin-left: 4px;">{{c.trailer}}</p>
+                        </div>
+                        <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">{{c.view}}</p>
+                        </div>
+                    </div>
+                </ng-container>    
+                <!-- <div class="right-content"> 
+                    <div class="item-content1">
+                        <img class="item-content1-img1" src="/assets/img1/sp2.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text">BLACK WINDOW</p>
+                    <div class="trailer">
+                        <p style="color: #b5b5b5; margin-left: 4px;">HD trailer</p>
+                    </div>
+                    <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">10k lượt xem</p>
+                    </div>
+                </div>
+                <div class="right-content"> 
+                    <div class="item-content1">
+                        <img class="item-content1-img1" src="/assets/img1/sp3.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text">DON'T LOOK UP</p>
+                    <div class="trailer">
+                        <p style="color: #b5b5b5; margin-left: 4px;">HD trailer</p>
+                    </div>
+                    <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">5k lượt xem</p>
+                    </div>
+                </div>
+                <div class="right-content"> 
+                    <div class="item-content1">
+                        <img class="item-content1-img1" src="/assets/img1/sp4.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text">NO TIME TO DIE</p>
+                    <div class="trailer">
+                        <p style="color: #b5b5b5; margin-left: 4px;">HD trailer</p>
+                    </div>
+                    <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">2k lượt xem</p>
+                    </div>
+                </div>
+                <div class="right-content"> 
+                    <div class="item-content1">
+                        <img class="item-content1-img1" src="/assets/img1/sp5.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text">LES US IN </p>
+                    <div class="trailer">
+                        <p style="color: #b5b5b5; margin-left: 4px;">HD trailer</p>
+                    </div>
+                    <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">8k lượt xem</p>
+                    </div>
+                </div>
+                <div class="right-content"> 
+                    <div class="item-content1">
+                        <img class="item-content1-img1" src="/assets/img1/sp6.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text">BLACK PINK</p>
+                    <div class="trailer">
+                        <p style="color: #b5b5b5; margin-left: 4px;">HD trailer</p>
+                    </div>
+                    <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">11k lượt xem</p>
+                    </div>
+                </div>
+                <div class="right-content"> 
+                    <div class="item-content1">
+                        <img class="item-content1-img1" src="/assets/img1/sp7.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text">BIỆT ĐỘI SĂN MA</p>
+                    <div class="trailer">
+                        <p style="color: #b5b5b5; margin-left: 4px;">HD trailer</p>
+                    </div>
+                    <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">4k lượt xem</p>
+                    </div>
+                </div>
+                <div class="right-content"> 
+                    <div class="item-content1">
+                        <img class="item-content1-img1" src="/assets/img1/sp8.jpg" alt="">
+                    </div>
+                    <div>
+                        <p class="text">ÁN TỬ TRÊN XE</p>
+                    <div class="trailer">
+                        <p style="color: #b5b5b5; margin-left: 4px;">HD trailer</p>
+                    </div>
+                    <p style="margin: 8px 0px 0px 20px;color: #b5b5b5;">6k lượt xem</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

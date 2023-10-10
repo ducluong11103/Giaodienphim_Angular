@@ -1,0 +1,62 @@
+<div class="body">
+    <div class="body-main">
+        <div class="left">
+            <div class="left-box">
+                <img class="left-img" [src]="getImageUrl(movieDetails?.poster_path || '')" alt="Movie Poster">
+                <div class="box-item">
+                    <h1 class="text-item">{{ movieDetails?.title }}</h1>
+                    <div class="box-textitem">
+                        <p class="text"><b>Giới thiệu: </b>{{ movieDetails?.overview}}</p>
+                        <p class="text"><b>Thể loại:</b> {{ movieDetails?.genre_ids }}</p>
+                        <p class="text"><b>Diễn viên:</b> {{ movieDetails?.original_title }}</p>
+                        <p class="text"><b>Ngày phát:</b> {{ movieDetails?. release_date }}</p>
+                        <p class="text"><b>Phổ biến:</b> {{ movieDetails?.popularity }}</p>
+                        <p class="text"><b>Đánh giá:</b> {{ movieDetails?.vote_count }}</p>
+
+                        <div class="towatch">
+                            <a href="#">Xem phim</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <h2 style="color:white;">Diễn viên</h2>
+    <div class="left-content">
+        <div class="item-content">
+            <a href="Dienvien.html"> <i class="fa-solid fa-user"></i> </a>
+            <a href="Dienvien.html">Bona</a>
+        </div>
+        <div class="item-content">
+            <a href="Dienvien.html"> <i class="fa-solid fa-user"></i> </a>
+            <a href="Dienvien.html">Kim Tae Ri</a>
+        </div>
+        <div class="item-content">
+            <a href="Dienvien.html"> <i class="fa-solid fa-user"></i></a>
+            <a href="Dienvien.html">Nam Joo Hyuk</a>
+        </div>
+    </div> -->
+
+
+    <div class="right">
+        <h2 class="text-item" style="font-size: 30px;margin-left: 5px ;">Nội dung tương tự</h2>
+        <div class="right-content">
+            <div class="box-img">
+                <a href="#"> <img class="content-img" src="./assets/img/n1.jpg" alt=""></a>
+            </div>
+            <div class="box-img">
+                <a href="#"> <img class="content-img" src="./assets/img/h1.jpg" alt=""></a>
+            </div>
+            <div class="box-img">
+                <a href="#"> <img class="content-img" src="./assets/img/h4.jpg" alt=""></a>
+            </div>
+            <div class="box-img">
+                <a href="#"> <img class="content-img" src="./assets/img/t1.jpg" alt=""></a>
+            </div>
+            <div class="box-img">
+                <a href="#"> <img class="content-img" src="./assets/img/n4.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
